@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnClose"
+        android:padding="10dp"
+        android:text="Select Profile Photo From :"
+        android:textColor="@color/colorBlack"
+        android:layout_alignTop="@+id/btnCamera"
+        android:textSize="16sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:drawableRight="@android:drawable/ic_menu_close_clear_cancel"
+        android:background="@color/colorAccent"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:gravity="bottom"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnChoose"
+            android:textStyle="bold"
+            android:background="@android:drawable/ic_menu_gallery"
+            android:layout_alignTop="@+id/btnCamera"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:textStyle="bold"
+            android:id="@+id/btnCamera"
+            android:background="@android:drawable/ic_menu_camera"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:gravity="bottom"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/A1"
+            android:text="Gallery"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:layout_alignTop="@+id/A2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/A2"
+            android:textSize="16sp"
+            android:textColor="@color/colorBlack"
+            android:gravity="center"
+            android:text="Camera"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</LinearLayout>

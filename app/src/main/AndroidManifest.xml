@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.atbunamsn">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <receiver android:name=".widgetClass">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widgetsettings"/>
+        </receiver>
+        <service
+            android:name=".myBackgroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="false" />
+
+        <receiver
+            android:name=".reminderService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="false" />
+        <receiver android:name=".myAlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="ATBU 37 NAMSN ELITE"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".homeView"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".viewNamsn"
+            android:label="@string/title_activity_view_namsn"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginScreen"
+            android:label="ATBU 37 NAMSSN ELITE"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".changePassword"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".changeQoute"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".changePics"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".allQoutes"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+
+    </application>
+
+</manifest>

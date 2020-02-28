@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.atbunamsn.MainActivity">
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:orderInCategory="10"
+        android:icon="@android:drawable/ic_menu_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView"/>
+    <item
+        android:id="@+id/action_home"
+        android:title="NAMSSN Home"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/action_profile"
+        android:title="View Profile"
+        android:orderInCategory="200"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_alluser"/>
+    <item
+        android:id="@+id/action_viewQoutes"
+        android:title="View Qoutes"
+        android:orderInCategory="300"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_alluser"/>
+    <item
+        android:id="@+id/action_status"
+        android:title="Update Status"
+        android:orderInCategory="400"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_edit"/>
+    <item
+        android:id="@+id/action_pics"
+        android:title="Change Pics"
+        android:orderInCategory="500"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_menu_camera_use"/>
+    <item
+        android:id="@+id/action_pas"
+        android:title="Change Password"
+        android:orderInCategory="600"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_key_two"/>
+    <item
+        android:id="@+id/action_signout"
+        android:title="Sign Out"
+        android:orderInCategory="700"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_logout"/>
+</menu>

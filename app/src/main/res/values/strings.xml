@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ATBU NAMSSN 37.</string>
+
+    <string name="title_activity_home_view">homeView</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">Computer Science</string>
+    <string name="tab_text_2">Mathematics</string>
+    <string name="tab_text_3">Statistics</string>
+    <string name="action_settings">Settings</string>
+    <string name="loading">Loading Records</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_view_namsn">viewNamsn</string>
+
+    <string name="title">ATBU NAMSSN 37 ELITES</string>
+    <string name="subtitle">Critical Thinkers !</string>
+
+
+    <!-- Strings related to login -->
+
+</resources>
